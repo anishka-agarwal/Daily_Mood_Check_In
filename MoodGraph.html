@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Mood Patterns</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f7f9fc;
+      display: flex;
+    }
+    .sidebar {
+      width: 240px;
+      background-color: #f0f0ff;
+      padding: 20px;
+      height: 100vh;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    }
+    .sidebar h2 {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin-bottom: 16px;
+      color: #333;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-bar h1 {
+      font-size: 20px;
+    }
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .time-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .time-toggle button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #e3f2fd;
+      cursor: pointer;
+    }
+    .graph-placeholder {
+      background-color: #f1f1f1;
+      height: 300px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      margin-bottom: 20px;
+    }
+    .mood-scale {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .mood-scale div {
+      background-color: #e3f2fd;
+      padding: 8px 12px;
+      border-radius: 20px;
+    }
+    .insights {
+      background-color: #e8f5e9;
+      padding: 15px;
+      border-left: 4px solid #66bb6a;
+      margin-bottom: 20px;
+    }
+    .button-checkin {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>EuroSchool</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Digital Forum</li>
+      <li>Mood Graph</li>
+      <li>Anonymous Box</li>
+      <li>Home Extension</li>
+      <li>Message Center</li>
+      <li>Curriculum</li>
+      <li>Courses</li>
+      <li>Space Walk</li>
+      <li>Performance</li>
+      <li>Calendar</li>
+      <li>Partnership Programs</li>
+      <li>Help & Support</li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="top-bar">
+      <h1>Hi, Anishka Agarwal</h1>
+      <div>🔔 | 👤 | 0 Euros</div>
+    </div>
+
+    <div class="box">
+      <h2>My Mood Patterns</h2>
+      <p>Track how you’ve been feeling over time</p>
+      <div class="time-toggle">
+        <button>Week</button>
+        <button>Month</button>
+        <button>Year</button>
+      </div>
+      <div class="graph-placeholder">
+        📈 Mood graph will appear here (static placeholder)
+      </div>
+      <div class="mood-scale">
+        <div>😄 Happy</div>
+        <div>🙂 Okay</div>
+        <div>😢 Sad</div>
+        <div>😠 Angry</div>
+        <div>😰 Anxious</div>
+        <div>😐 Meh</div>
+        <div>🤢 Disgusted</div>
+      </div>
+      <div class="insights">
+        <p>“You felt happy 4 days last week. Anxiety spiked on Monday and Friday. Want to talk about it?”</p>
+      </div>
+      <button class="button-checkin">📬 Request a check-in with SEL Teacher</button>
+    </div>
+  </div>
+</body>
+</html>
