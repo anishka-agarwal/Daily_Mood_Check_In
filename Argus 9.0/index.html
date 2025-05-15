@@ -1,0 +1,171 @@
+<!-- Save as index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f7f9fc;
+      display: flex;
+    }
+    .sidebar {
+      width: 240px;
+      background-color: #f0f0ff;
+      padding: 20px;
+      height: 100vh;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    }
+    .sidebar h2 {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin-bottom: 16px;
+      color: #333;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-bar h1 {
+      font-size: 20px;
+    }
+    .dashboard {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+    }
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .tasks, .message {
+      margin-top: 20px;
+    }
+    .task-cards {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #fff;
+      border-left: 4px solid #ffd54f;
+      padding: 10px;
+      border-radius: 6px;
+      width: 230px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .card h4 {
+      margin: 0 0 8px 0;
+      font-size: 14px;
+      color: #333;
+    }
+    .card p {
+      margin: 0;
+      font-size: 12px;
+      color: #555;
+    }
+    .mood-checkin {
+      background: #fff3e0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .emoji-options {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+    .mood-checkin textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .privacy-note {
+      font-size: 0.85em;
+      color: #777;
+      margin-top: 10px;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="sidebar">
+    <h2>EuroSchool</h2>
+    <ul>
+      <li><a href="index.html" style="text-decoration:none; color:inherit;">Dashboard</a></li>
+      <li><a href="forum.html" style="text-decoration:none; color:inherit;">Digital Forum</a></li>
+      <li><a href="complaints.html" style="text-decoration:none; color:inherit;">Anonymous Box</a></li>
+      <li><a href="mood.html" style="text-decoration:none; color:inherit;">Mood Graph</a></li>
+      <li>Home Extension</li>
+      <li>Message Center</li>
+      <li>Curriculum</li>
+      <li>Courses</li>
+      <li>Space Walk</li>
+      <li>Performance</li>
+      <li>Calendar</li>
+      <li>Partnership Programs</li>
+      <li>Help & Support</li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="top-bar">
+      <h1>Hi, Anishka Agarwal</h1>
+      <div>🔔 | 👤 | 0 Euros</div>
+    </div>
+
+    <div class="mood-checkin">
+      <h3>How’s your day going?</h3>
+      <div class="emoji-options">😄 😐 😢 😡 🤢 😰 🥳</div>
+      <textarea placeholder="Why do you feel this way? (optional)"></textarea>
+      <p class="privacy-note">🔒 Only your SEL teacher can view your mood trends. Your privacy is respected.</p>
+    </div>
+
+    <div class="dashboard">
+      <div class="box">
+        <h3>Learning Journey</h3>
+        <p style="color:#999;">No Data</p>
+      </div>
+      <div class="box">
+        <h3>Message Center</h3>
+        <p><strong>Biology Worksheet</strong><br><small>Seema Soni • a month ago</small></p>
+      </div>
+    </div>
+
+    <div class="tasks">
+      <h3>Tasks</h3>
+      <div class="task-cards">
+        <div class="card">
+          <h4>Chemical reactions and equations</h4>
+          <p>Science • Worksheet</p>
+        </div>
+        <div class="card">
+          <h4>Chemical reactions and equations</h4>
+          <p>Science • Worksheet</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
